@@ -74,14 +74,14 @@ docker cp /tmp/<NOME_DO_BACKUP.sql> ctr-mysql:/tmp/<NOME_DO_BACKUP.sql>
 Acesse o container
 
 ```bash
-docker exec -it ctr-mysql /bash
+docker exec -it ctr-mysql bash
 ```
 
 Verifique se o banco de dados existe
 
 
 ```bash
-mysql -u root -p'SENHA_DO_ROOT'
+mysql -u root -p
 
 SHOW DATABASES;
 ```
@@ -91,7 +91,7 @@ Se não existir, crie o banco de dados
 ```bash
 mysql -u root -p'SENHA_DO_ROOT'
 
-CREATE DATABASE nome_do_banco;
+CREATE DATABASE IF NOT EXISTS nome_do_banco;
 ```
 
 Restaure o backup
