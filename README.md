@@ -17,6 +17,7 @@ docker network create --driver bridge <NOME_DA_REDE_DOCKER> --subnet=<SUBNET_DO_
 ## Estrutura de arquivos
 
 ```plaintext
+|__ mysql-init/           # Diretório do projeto
 ├── docker-compose.yml    # Definição dos serviços Docker
 ├── .env.example          # Exemplo de variáveis de ambiente
 └── README.md             # Este arquivo de documentação
