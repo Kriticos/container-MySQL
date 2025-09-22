@@ -66,7 +66,7 @@ No servidor docker:
 ### Copiar o backup da base de dados para o container
 
 ```bash
-docker cp /tmp/<NOME_DO_BACKUP.sql> ctr-mysql:/tmp/<NOME_DO_BACKUP.sql>
+docker cp /tmp/NOME_DO_BACKUP.sql ctr-mysql:/tmp/NOME_DO_BACKUP.sql
 ```
 
 ### Restaurar o backup dentro do container
