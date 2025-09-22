@@ -7,8 +7,9 @@ Este repositório fornece um ambiente Docker Compose para provisionar um contain
 - Docker e Docker Compose.
 - Rede Docker `network-share` já criada:
 
+## Criar a rede externa se ainda não existir
+
 ```bash
-# Criar a rede externa se ainda não existir
 docker network create --driver bridge network-share --subnet=172.18.0.0/16
 ```
 
