@@ -14,7 +14,7 @@ services:
       network-share:
         ipv4_address: ${IPV4_ADDRESS}  # IP fixo para o srv-mysql
     ports:
-      - ${PORTS}
+      - ${PORTS_MYSQL}
     restart: unless-stopped
 
 networks:
